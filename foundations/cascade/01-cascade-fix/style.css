@@ -8,16 +8,18 @@ body {
   font-weight: 800;
 }
 
-.small-para {
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
+/* As there is same specificity earlier when only .small-para is present it used the file which appears later in the file and font size was same as para. */
 
 .para {
   font-size: 22px;
 }
 
-.confirm {
+/* we can also use #confirm-button.any of the class selectors or without any class selectors */
+.button.confirm {
   background: green;
   color: white;
   font-weight: bold;
@@ -28,8 +30,8 @@ body {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
-
-.child {
+/* we can use descendant combinator as well , here as class selector has more preference than div this code worked */
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
