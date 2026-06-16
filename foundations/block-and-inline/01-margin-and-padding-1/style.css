@@ -7,22 +7,25 @@ body {
   background: pink;
   border: 3px solid blue;
   /* CHANGE ME */
-  padding: 0px;
-  margin: 0px;
+  padding: 32px;
+  margin: 12px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
   /* CHANGE ME */
-  margin-bottom: 0px;
+  margin-bottom: 48px;
 }
 
 .three {
+  /* float:right; */
   background: peachpuff;
   border: 3px solid brown;
   width: 200px;
   /* CHANGE ME */
-  padding: 0px;
-  margin-left: 0px;
+  padding: 32px;
+  /* margin-left: 320px; */
+  /* as parent body takes 600px and three takes 200+2*32+2*3 = 270 px and the remaining 330 px is used up by auto of class three */
+  margin-left:auto;
 }
